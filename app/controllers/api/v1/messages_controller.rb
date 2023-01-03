@@ -3,6 +3,5 @@ class Api::V1::MessagesController < ApplicationController
     render json: Message.all
   end
 
-  def show
-  end
+  def show; end
 end
