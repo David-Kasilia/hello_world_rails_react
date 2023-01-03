@@ -15,9 +15,18 @@ const Greeting = () => {
 
   return (
     <div>
-      <h2>Greetings from above</h2>
+     <div class="card mt-5 me-5 ms-5">
+      <div class="card-body">
+      {greetings.message}
+      </div>
+    </div>
+   
+     
+     
     </div>
   )
 }
 
 export default Greeting
+
+
