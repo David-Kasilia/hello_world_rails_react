@@ -18,14 +18,9 @@ export const fetchGreetings = (payload) => ({
 
 // Fetch Greetings
 export const fetchGreetingsAsync = () => async (dispatch) => {
-    axios.get(api).then((response) => {
-        const { data } = response
-        dispatch({type: FETCH_GREETINGS, payload: data[0]});
-    })
-
-    // const response = await axios.get(api);
-    // const data = await response.data;
-    // dispatch(fetchGreetings(data));
+    const response = await axios.get(api);
+    const data = await response.data;
+    dispatch(fetchGreetings(data));
 };
 
 // Reducer

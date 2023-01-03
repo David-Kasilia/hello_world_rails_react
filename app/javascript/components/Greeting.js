@@ -20,9 +20,6 @@ const Greeting = () => {
       {greetings.message}
       </div>
     </div>
-   
-     
-     
     </div>
   )
 }

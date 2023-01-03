@@ -1,7 +1,6 @@
 class Api::V1::MessagesController < ApplicationController
   def index
-    render json: Message.all
+    msg = Message.all
+    render json: msg[rand(0...msg.length - 1)]
   end
-
-  def show; end
 end
